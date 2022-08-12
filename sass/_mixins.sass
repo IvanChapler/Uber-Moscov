@@ -1,0 +1,43 @@
+@mixin btn($w, $h, $marginT, $fz)
+  width: $w
+  height: $h
+  background-image: linear-gradient(0deg, $color_1 0%, #4ce2ff 100%)
+  border: none
+  box-shadow: inset 0px -3px 8px 0px rgba(0, 0, 0, 0.11)
+  border-radius: 4px
+  margin-top: $marginT
+  font-size: $fz
+  font-weight: $fw_400
+  text-transform: uppercase
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
+  color: #ffffff
+  transition: all 300ms ease-out
+  transform-style: preserve-3d
+  &::after
+    content: 'Спасибо!'
+    position: absolute
+    top: -50%
+    left: 0px
+    width: 100%
+    height: 100%
+    background-image: linear-gradient(0deg, $color_2 0%, #ff4c97 100%)
+    border: none
+    box-shadow: inset 0px 8px 10px 0px rgba(0, 0, 0, 0.11)
+    border-radius: 4px
+    font-size: $fz
+    font-weight: $fw_400
+    text-transform: uppercase
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
+    color: #ffffff
+    transform-origin: bottom
+    transform: rotateX(90deg)
+    display: flex
+    justify-content: center
+    align-items: center
+  &:hover
+    transform-origin: bottom
+    transform: rotateX(-90deg)
+    // background-image: linear-gradient(0deg, $color_2 0%, #ff4c97 100%)
+    
+@mixin bg
+  background: url(../image/background_mobile.png) center (center / cover) no-repeat
