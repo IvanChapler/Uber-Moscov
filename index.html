@@ -10,11 +10,7 @@
     <meta name="description" content="prarcticle on bootstrap">
     <title>Bootstrap practicle</title>
     <link rel="icon" href="icons/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family= Roboto: wght @300;400;700 & display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/meyerweb-reset.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -54,7 +50,7 @@
                         <number><a class="subheader_phone" href="tel:+74957970988">8 495 797 09 88</a></number>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-6">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 offset-2 offset-sm-2 offset-md-0">
                     <number><a class="subheader_phone sm-visible" href="tel:+74957970988">8 495 797 09 88</a></number>
                         <button class="subheader_btn align-self-center">
                             Заказать звонок
@@ -76,13 +72,11 @@
                 </div>
                 <div id="OpenModal" class="promo_modal col-md-12">
                     <div class="promo_window">
-                        <form action="#" method="get" autocomplete="on">
-                            <fieldset name="application">
-                                <legend class="mb-3 mt-3">Заявка</legend>        
-                                <input type="text" name="fname" id="fname" value="" placeholder="Имя" class="promo_window_form">
-                                <input type="email" name="mail" id="mail" value="" placeholder="Email" class="promo_window_form">
-                                <button type="submit" class="promo_window_btn">Отправить</button>
-                            </fieldset>
+                        <form class="promo_form"action="#" method="get" autocomplete="on">
+                            <legend>Заявка</legend>        
+                            <input type="text" name="fname" id="fname" value="" placeholder="Имя" class="promo_window_form">
+                            <input type="email" name="email" id="mail" value="" placeholder="Email" class="promo_window_form">
+                            <button type="submit" class="promo_window_btn">Отправить</button>
                         </form>
                         <div class="promo_window_close" data-easy-toggle="#OpenModal" data-easy-class="open" data-easy-rcoe>x</div>
                     </div>
@@ -355,13 +349,14 @@
                </div>
            </div>
            <div class="footer_applications">
-               <a href="#"><img src="icons/google-play-badge-hd.png" alt=""></a>
-               <a href="#"><img src="icons/google-play-badge-hd.png" alt=""></a>
-               <a href="#"><img src="icons/google-play-badge-hd.png" alt=""></a>
+               <a href="#"><img src="icons/Google_Play_Store_badge_EN.svg.png" alt="google play"></a>
+               <a href="#"><img src="icons/galaxy_store.png" alt="galaxy store"></a>
+               <a href="#"><img src="icons/pngg-clipart-app-store-apple-itunes-ios-apple-text-logo.png" alt="app store"></a>
            </div>
         </div>
     </footer>
-    <script src="js/script.js">
+    <script src="js/script.js"></script>
+    <script>
        (function() {
            'use strict';
        
